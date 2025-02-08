@@ -1,0 +1,103 @@
+body {
+  background-color: #01352c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  color: #885df1;
+}
+
+.wetter-app {
+  background: #61b390;
+  max-width: 480px;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 0 30px 50px rgba(100, 222, 106, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+header {
+  border-bottom: #61b390;
+  padding: 0 0 30px 0;
+}
+.wetter-app-quote {
+  font: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.search-input {
+  background-color: #e5dfdf;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-button {
+  background: #357376;
+  padding: 10px 20px;
+  border-color: #6ba8a9;
+  font-size: 16px;
+  border-radius: 6px;
+  color: white;
+  display: block;
+  margin: 10px auto;
+}
+
+main {
+  padding: 10px 20px;
+}
+
+.wetter-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wetter-app-city {
+  margin: 0 auto;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.wetter-app-details {
+  font-size: 16px;
+  color: rgba(0, 1, 1, 0.4);
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.wetter-app-details strong {
+  color: #3d6271;
+}
+
+.wetter-app-temperature-data {
+  display: flex;
+}
+
+.wetter-app-emoji {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.wetter-app-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.wetter-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+footer {
+  border-top: #61b390;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}

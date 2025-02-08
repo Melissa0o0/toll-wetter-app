@@ -4,39 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="scr/style.css" />
   </head>
   <body>
-    <header>
-      <p>My mood follows the weather</p>
-      <form>
-        <input type="search" placeholder="Enter a city" id="city-search" />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Berlin</h1>
-        <p>
-          Saturday 11:55, Windy
-          <br />
-          Humidity: 66%, Wind: 5km/h
-        </p>
-      </div>
-      <div>⛅️ 8°C</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Melissa0o0" target="_blank"> Melissa Shi </a>,
-      is
-      <a href="https://github.com/Melissa0o0/toll-wetter-app" target="_blank">
-        open-sourced on Github
-      </a>
-      and
-      <a href="https://toll-wetter.netlify.app" target="_blank">
-        hosted on Netlify
-      </a>
-    </footer>
+    <div class="wetter-app">
+      <header>
+        <p class="wetter-app-quote">Gone with the weather!</p>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="wetter-app-data">
+          <div class="wetter-app-temperature-data">
+            <div class="wetter-app-emoji">⛅️</div>
+            <div class="wetter-app-temperature">8</div>
+            <div class="wetter-app-unit">°C</div>
+          </div>
+          <div>
+            <h1 class="wetter-app-city">Berlin</h1>
+            <p class="wetter-app-details">
+              Saturday 11:55, Windy
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>5km/h</strong>
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Melissa0o0" target="_blank"> Melissa Shi</a
+        >, is
+        <a href="https://github.com/Melissa0o0/toll-wetter-app" target="_blank">
+          open-sourced on Github
+        </a>
+        and
+        <a href="https://toll-wetter.netlify.app" target="_blank">
+          hosted on Netlify
+        </a>
+      </footer>
+    </div>
   </body>
-  <script src="src/script.js"></script>
+  <script src="scr/script.js"></script>
 </html>
