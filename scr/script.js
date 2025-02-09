@@ -9,8 +9,6 @@ function UpdateWeather(response) {
   let date = new Date(response.date.time * 1000);
   let emojiElement = document.querySelector("#emoji");
 
-  console.log(response.data);
-
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   moodElement.innerHTML = response.data.condition.description;
@@ -48,9 +46,11 @@ function CitySearch(city) {
 function SearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-  let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = searchInput.value;
+
+  SearchSubmit(searchInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", SearchSubmit);
+
+SearchSubmit("Berlin");
