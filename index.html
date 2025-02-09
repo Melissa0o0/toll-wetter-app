@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="scr/style.css" />
   </head>
   <body>
@@ -30,17 +31,19 @@
         <div class="wetter-app-data">
           <div class="wetter-app-temperature-data">
             <div class="wetter-app-emoji" id="emoji">⛅️</div>
-            <div class="wetter-app-temperature" id="temperature">8</div>
-            <div class="wetter-app-unit">°C</div>
+            <div class="wetter-app-temperature">
+              <br /><strong id="temperature">8</strong>
+              <strong id="degrees">°C</strong>
+            </div>
           </div>
           <div>
             <h1 class="wetter-app-city" id="city">Berlin</h1>
             <p class="wetter-app-details">
-              <span id="time"></span>
-              <span id="mood"></span>
-              Saturday 11:55, Windy
+              <span id="time">Saturday 11:55,</span>
+              <span id="mood"> Windy</span>
+
               <br />
-              Humidity: <strong id="humidity">35%</strong>, Wind: 45km/h
+              Humidity: <strong id="humidity">35%</strong>, Wind:
               <strong id="wind-speed"></strong>
             </p>
           </div>

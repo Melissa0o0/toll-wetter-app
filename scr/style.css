@@ -39,7 +39,7 @@ header {
 
 .search-button {
   background: #357376;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-color: #6ba8a9;
   font-size: 16px;
   border-radius: 6px;
@@ -53,8 +53,10 @@ main {
 }
 
 .wetter-app-data {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  display: inline;
+
+  margin: 0 auto;
 }
 
 .wetter-app-city {
@@ -75,23 +77,23 @@ main {
 }
 
 .wetter-app-temperature-data {
-  display: flex;
+  display: block;
+  text-align: center;
 }
 
 .wetter-app-emoji {
-  font-size: 44px;
-  margin-top: 22px;
+  padding: 10px 15px;
 }
 
-.wetter-app-temperature {
+#temperature {
   font-size: 88px;
-  margin-left: 10px;
+  padding-top: 10px;
   font-weight: bold;
 }
 
-.wetter-app-unit {
-  margin-top: 16px;
-  font-size: 28px;
+#degrees {
+  margin-top: 90px;
+  font-size: 18px;
 }
 
 footer {

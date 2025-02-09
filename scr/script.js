@@ -6,7 +6,7 @@ function UpdateWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windspeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
-  let date = new Date(response.date.time * 1000);
+  let date = new Date(response.data.time * 1000);
   let emojiElement = document.querySelector("#emoji");
 
   cityElement.innerHTML = response.data.city;
@@ -39,18 +39,18 @@ function formatDate(date) {
 }
 function CitySearch(city) {
   let apiKey = "937eb44cb68833ao5cdt10179cf40b38";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
   axios.get(apiUrl).then(UpdateWeather);
 }
-
 function SearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-
-  SearchSubmit(searchInput.value);
+  CitySearch(searchInput.value);
 }
 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", SearchSubmit);
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", SearchSubmit);
 
-SearchSubmit("Berlin");
+CitySearch("Berlin");
