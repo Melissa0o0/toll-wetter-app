@@ -29,27 +29,27 @@ header {
 
   text-align: center;
 }
+#search-form {
+  display: flex;
+  justify-content: center;
+}
 .search-input {
   background-color: #e5dfdf;
   border: none;
-  border-radius: 6px;
-  width: 80%;
+  border-radius: 8px;
+
+  min-width: 250px;
+  padding: 10px 8px;
   font-size: 16px;
-  padding: 12px 18px;
-  display: block;
-  margin: 0 auto;
 }
 
 .search-button {
   background: #357376;
-  padding: 10px 15px;
   border-color: #6ba8a9;
   font-size: 16px;
-  border-radius: 6px;
+  padding: 8px;
+  border-radius: 10px;
   color: white;
-  display: block;
-  justify-self: center;
-  margin: 15px;
 }
 
 main {
