@@ -23,7 +23,10 @@ header {
   padding: 0 0 10px 0;
 }
 .wetter-app-quote {
-  font: 100;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+
   text-align: center;
 }
 .search-input {
@@ -109,21 +112,19 @@ main {
 .wetter-forecast {
   display: flex;
   justify-content: space-around;
-  margin-top: 25px;
-  border-color: #01352c;
-  border: 5px;
+  margin: 40px 0px;
+  background: #4db688;
+  padding: 25px 20px;
 }
-.forecast-day {
-  margin-top: 35px;
-}
+
 .forecast-date {
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 16px;
-  line-height: 10px;
+  line-height: 5px;
 }
 .forecast-emoji {
-  max-width: 80px;
+  max-width: 70px;
 }
 .forecast-temperature {
   color: rgb(0, 0, 0);
@@ -131,15 +132,12 @@ main {
   display: flex;
   justify-content: center;
 }
-.forecast-temp {
-  margin: 5px auto;
-}
 
 footer {
   border-top: #61b390;
-  padding: 30px 0 0 0;
+  padding: 15px 0 0 0;
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
-  margin-top: 30px;
+  margin-top: 20px;
 }

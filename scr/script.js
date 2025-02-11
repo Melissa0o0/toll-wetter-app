@@ -90,4 +90,4 @@ function displayForecast(response) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", SearchSubmit);
 
-CitySearch("Berlin");
+CitySearch("Frankfurt");
